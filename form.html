@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Form demo</title>
+        <style>
+            /* #user{
+                width: 120px;
+                background-color: grey;
+            } */
+        </style>
+    </head>
+    <body>
+        <form>
+            <label>Name : </label>
+            <input name="fname" type="text" id="firstname" value="sameer" placeholder="enter name here" required/>
+            <br/>
+           <label>Password :</label> <input type="password" value="123" id="paas1"/>
+            <label>Profile pic : </label><input type="file" id="profilepic"/>
+            <br/>
+            <label>Enrolled</label> : <input type="radio"/>
+
+            <input type="radio" name="gender"/>
+            <br/>
+            <label>Male</label>
+            <input type="radio" name="gender"/>
+            <label>Female</label>
+            <!-- <label>Courses</label> <input type="checkbox"/> -->
+            <br/>
+            <label>DOB</label><input type="date"/>
+            <br/>
+            <input type="submit"/>
+            <br/>
+            <label>Courses</label>
+            <input type="checkbox" name="courses"/>
+            <label>FSD</label>
+            <input type="checkbox" name="courses"/>
+            <label>JAVA</label>
+            <input type="checkbox" name="courses"/>
+            <label>DS</label>
+
+            <!-- file picker-->
+            <br/>
+            <label>Profile pic</label>
+            <input type="file" id="pic1" name="profilepic"/>
+            <br/>
+            <!-- text area for multiline-->
+            <label>Address : </label>
+            <textarea name="address" id="address" rows="7" cols="80"></textarea>
+
+            <br/>
+            <!-- DatePicker-->
+            <label>Datepicker</label>
+            <input type="date" id="dob" name="dob"/>
+
+            <!-- selectbox-->
+            <br/>
+            <label>Courses</label>
+            <select>
+                <option>FSD</option>
+                <option>JAVA</option>
+                <option>JAVASCRIPT</option>
+            </select>
+
+            <input type="checkbox" name="agreement"/>
+            <label>You agree to our privacy policy.</label>
+
+              <!-- input type email-->
+              <label>Email Address</label>
+              <input type="email" id="email" name="email"/>
+
+              <!--input type number-->
+              <label>Price</label>
+              <input type="number" id="price" name="price" min="1" max="10" step="2"/>
+            <!-- submit button-->
+            <br/>
+            <input type="submit" value="Login"/>
+
+            <!-- reset button-->
+            <input type="reset" value="reset" disabled/>
+
+          
+
+        </form>
+        <!-- <script>
+            console.log(document.getElementById("fname").value)
+        </script> -->
+    </body>
+</html>

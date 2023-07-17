@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            fieldset demo
+        </title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Address form</legend>
+                <label>House no</label>
+                <input type="text"/>
+                <label>Street no</label>
+                <input type="text"/>
+                <label>Zip code</label>
+                <input type="text"/>
+            </fieldset>
+            <fieldset>
+                <legend>Credit card form</legend>
+                <label>card number</label>
+                <input type="text"/>
+            </fieldset>
+
+            <label>Courses</label>
+            <select name="course" id="course">
+                <optgroup label="FSD">
+                    <option>MEAN</option>
+                    <option>MERN</option>
+                </optgroup>
+                <optgroup label="DATA SCIENCE">
+                    <option>Python</option>
+                    <option>Data analyst</option>
+                </optgroup>
+            </select>
+
+            <!-- optgroup demo-->
+            <label>Semesters</label>
+            <select>
+                <optgroup label="First Semester">
+                    <option>C</option>
+                    <option>CPP</option>
+                    <option>GRAPHICS</option>
+                </optgroup>
+                <optgroup label="Second semester">
+                    <option>JAVA</option>
+                    <option>DS</option>
+                </optgroup>
+            </select>
+
+            <!-- data list tag demo-->
+
+            <!-- <label>Colors box</label>
+            <input list="colors"/>
+            <datalist id="colors">
+                <option value="red"></option>
+                <option value="blue"></option>
+                <option value="green"></option>
+            </datalist> -->
+            <label>enter course name</label>
+            <input type="text"/>
+
+            <label>Course</label>
+            <input list="courses"/>
+            <datalist id="courses">
+                <option value="C"></option>
+                <option value="CPP"></option>
+                <option value="JAVA"></option>
+                <option value="DS"></option>
+            </datalist>
+        </form>
+    </body>
+</html>
