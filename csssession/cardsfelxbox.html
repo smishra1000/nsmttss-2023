@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            cards using flexbox
+        </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .card-container{
+                width:320px;
+                background-color: burlywood;
+                height:auto;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 3px 3px #ddd;
+
+            }
+            body{
+                background-color: cadetblue;
+                height: 800px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .course-image{
+                width: 100%;
+            }
+            .course-title{
+                padding: 10px;
+            }
+            .description{
+                padding: 10px;
+                font-size: 20px;
+            }
+            .action{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 14px;
+                padding: 8px;
+            }
+            .live-button{
+                width: 100px;
+                height: 40px;
+                background-color: firebrick;
+                border-radius: 10px;
+                font-size: 16px;
+                padding: 5px;
+            }
+            .record-button{
+                width: 120px;
+                height: 40px;
+                background-color: firebrick;
+                border-radius: 10px;
+                font-size: 14px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card-container">
+           <div><img  class="course-image" src="../nodejs-image.jpg"></div>
+           <div class="course-title"><h2>MERN STACK</h2></div>
+           <div class="description"><p>Get company-specific interview preparation help, from the likes of Google, Swiggy, Microsoft.</p></div>
+           <div class="action">
+            <button class="live-button">Join Live</button>
+            <button class="record-button">Watch Recording</button>
+           </div>
+        </div>
+    </body>
+</html>

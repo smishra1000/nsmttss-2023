@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            flex demo
+        </title>
+        <style>
+            /* .box{
+                width: 100px;
+                height:100px;
+                margin: 5px;
+                background-color: chocolate;
+            }
+            .parent{
+                display: flex; 
+                 flex-direction: row;
+                 border: 2px solid red;
+                 height: 300px;
+            } */
+            .margin-box{
+                width: 300px;
+                height: 300px;
+                background-color: #ad8052;
+                border: 2px dashed #000;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+            .margin-text{
+                position: absolute;
+                top: 0px;
+                left: 10px;
+
+            }
+            .border-box{
+                width: 260px;
+                height: 260px;
+                border: 2px solid #000;
+                background-color: #e3c381;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+            }
+            .border-text{
+                position: absolute;
+                top: 0px;
+                left: 10px;
+
+            }
+            .padding-box{
+                width: 220px;
+                height: 220px;
+                border: 2px dashed #000;
+                background-color: #b7c47f;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;;
+
+            }
+            .padding-text{
+                position: absolute;
+                top: 0px;
+                left: 10px;
+            }
+            .content-box{
+                width: 130px;
+                height: 23px;
+                border: 2px dashed #000;
+                background-color: #87b2bc;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="parent">
+            <div class="box">
+                box1
+            </div>
+            <div class="box">
+                box2
+            </div>
+            <div class="box">
+                box3
+            </div>
+        </div>
+        <div style="background-color: yellow;">
+            <h1>hello please register your self</h1>
+        </div> -->
+        <div class="margin-box">
+            <span class="margin-text">Margin</span>
+            <div class="border-box">
+                <span class="border-text">Border</span>
+                <div class="padding-box">
+                    <span class="padding-text">padding</span>
+                    <div class="content-box">
+                            836*30
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </body>
+</html>

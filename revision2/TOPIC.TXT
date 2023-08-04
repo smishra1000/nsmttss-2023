@@ -1,0 +1,21 @@
+CSS---------------------------------------------------------
+first child and first of type , pseduo elements
+expain about pseudo elements and types sir
+pseudo element
+descendent and child selector with examples
+pseuduo class
+general sibling
+sir please explain all selector type once with example
+
+HTML--------------------------------------------------------------
+empty element
+summary tag
+HTML forms and attributes
+<em >tag
+audio and video tag
+strong tag
+image map
+password type
+HTML all attributes
+difference between name, value and id in type attribute
+fieldset and legend

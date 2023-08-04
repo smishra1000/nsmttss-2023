@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            /* p:first-child{
+                color:red
+            } */
+            /* p:first-of-type{
+                color:red
+            } */
+            p:nth-child(3){
+                color:blue
+            }
+            tr:nth-child(1){
+                background-color: green;
+            }
+            tr:nth-child(2){
+                background-color: red;
+            }
+            tr:nth-child(3){
+                background-color: blue;
+            }
+            input:focus{
+                color:red
+            }
+            input:required{
+                background-color: red;
+                color:#000;
+            }
+            input:read-only{
+                    background-color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <p>hello paragrpah</p>
+        <p>hello paragrpah2</p>
+        <h2>hello heading 222</h2>
+        <h2>hello heading second</h2>
+        <div>
+            <h2>hello heading second</h2>
+            <p>helllo paragraph inside box</p>
+            <p>helllo paragraph inside box2</p>
+        </div>
+        <table border="2">
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>sameer</th>
+                <th>20</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>test2</th>
+                <th>22</th>
+            </tr>
+        </table>
+        <lable>
+            first name
+        </lable>
+        <input type="text" value=""/>
+        <lable>
+            email
+        </lable>
+        <input type="text" value="" readonly/>
+    </body>
+</html>

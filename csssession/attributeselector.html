@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <title>attribute selector demo</title>
+        <style>
+            /* a[target]{
+                color:red
+            }
+            a[href]{
+                color:green
+            } */
+            /* a[target="_blank"]{
+                color:red
+            }
+            [name~="fname"]{
+                color:blue
+            }
+            [name|="first"]{
+                color:green;
+            } */
+            /* [id|="login"]{
+                background-color: red;
+            } */
+            /* div[id|="login"]{
+                background-color: red;
+            }
+            div[class~="login"]{
+                background-color: green;
+            } */
+            /* [id^="pag"]{
+                color:blue
+            } */
+            /* [id$="box"]{
+                color:blue
+            } */
+            /* [id|="first"]{
+                color:green;
+            }  */
+            /* [id*="he"]{
+                color:blue;
+            } */
+            /* [name~="first"]{
+                color:red
+            } */
+            input[type="text"]{
+                color:red;
+                background-color: grey;
+                height:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Attribute selector demo</h1>
+<!-- 
+        <a target="_blank">google</a>
+        <a target="_self">google</a>
+        <a href="https://google.com">google</a>
+
+        <input name="fname" value=""/>
+        <input name="lanme" value=""/>
+        <input name="first-name" value=""/>
+        <input name="first-salary" value=""/> -->
+        <!-- <div id="login-box">
+            i am login box
+        </div>
+        <br/>
+        <div id="login-error">
+            i am login error
+        </div> -->
+        <!-- <div class="login box">
+            i am login box
+        </div>
+        <br/>
+        <div class="login error">
+            i am login error
+        </div>
+        <div class=" error">
+            i am login new
+        </div> -->
+
+        <!-- <div id="page-signup-box">signup page</div>
+        <div id="page-login-box">login page</div>
+        <div id="pag-welcome-box">welcome page</div> -->
+        <!-- <div id="first-name" class="first">box1</div>
+        <div id="salry-get-first" class="first">box2</div> -->
+
+        <!-- <h1 id="head1">hello1</h1>
+        <h1 id="he11">hello2</h1>
+        <h1 id="d1he">hello3</h1> -->
+
+        <!-- <input name="first name">
+        <input name="name first"> -->
+
+        <form>
+            <label>First Name</label>
+            <input type="text" class="first name" value=""/>
+            <lable>Last Name</lable>
+            <input type="text" class="last nname" value=""/>
+        </form>
+    </body>
+</html>
+
+<!-- id="login-box"
+id="login-error"
+[id|="login"] -->

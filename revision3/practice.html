@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        responsive layout
+    </title>
+    <style>
+        .nav-container {
+            width: 100%;
+            background: cyan;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav{
+            display: flex
+        }
+        nav ul li{
+            display: inline-block;
+            padding: 16px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        @media screen and (max-width:600px) {
+            .nav-container{
+                display: flex;
+                flex-direction: column;
+
+            }
+            nav ul li{
+                display: block
+            }
+        }
+        @media print {
+            nav{
+                color:red;
+                font-size: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div>
+                <h1>MyWeB</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>

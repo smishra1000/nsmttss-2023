@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>recap2</title>
+        <style>
+            #p1{
+                color:red
+            }
+            #p2{
+                color:green
+            }
+            .head1{
+                color:blue
+            }
+        </style>
+    </head>
+    <body>
+        <p>hello paragraph</p>
+        <!-- empty element--- no content-->
+        <br/>
+
+        <!-- Attributes-->
+        <p id="p1">paragraph1</p>
+        <p id="p2">paragrpah2</p>
+
+        <h1 class="head1">hello heading1</h1>
+        <h2 class="head1">hello heading2</h2>
+
+        <form name="signup_form" action="result.html" method="post">
+            <label>Email</label>
+            <input type="email" value="" name="email"/>
+            <label>Paasword</label>
+            <input type="password" value="" name="password"/>
+            <button type="submit">signup</button>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Address</legend>
+                <label>City</label>
+                <input type="text" value=""/>
+            </fieldset>
+            <fieldset>
+                <legend>Salry</legend>
+                <label>Expected</label>
+                <input type="text" value=""/>
+                <label>current</label>
+                <input type="text" value=""/>
+            </fieldset>
+        </form>
+
+        <p>hello i am <em>sameer mishra</em></p>
+        <strong>hello</strong>
+
+        <!-- details and summary tag-->
+        <details>
+            <summary>HTML</summary>
+            <p>html is markup language</p>
+        </details>
+
+        <img src="../nodejs-image.jpg" width="200px" height="200px" alt="some image" usemap="#p1"/>
+        <map name="p1">
+            <area shape="circle" href="https://google.com" alt="googlelink" coords="30,45,200,100">
+            <area shape="circle" href="https://newtonschool.com" alt="googlelink" coords="60 70 100 200">
+        </map>
+    </body>
+</html>

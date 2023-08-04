@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>grid demo</title>
+    <style>
+        .parent {
+            border: 2px solid red;
+            display: grid;
+            grid-template-columns: 100px auto auto 100px;
+            grid-template-rows: 100px 100px 100px;
+        }
+
+        .child {
+            /* background-color: brown; */
+            color:#fff;
+            font-size: 20px;
+            padding: 10px;
+            border: 5px solid red;
+        }
+
+        .nsnavbar {
+            display: grid;
+            width: 100%;
+            background-color: rgba(255, 255, 255, .18);
+            background-image: linear-gradient(119deg, #175cd3, #1e1c49 40%, #171733 65%, #000);
+            grid-template-columns: 100px 150px repeat(4,300px);
+            grid-template-rows: 100px;
+            grid-row-gap:10px;
+            grid-column-gap:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="parent">
+            <div class="child">child1</div>
+            <div class="child">child2</div>
+            <div class="child">child3</div>
+            <div class="child">child4</div>
+            <div class="child">child5</div>
+            <div class="child">child6</div>
+            <div class="child">child7</div>
+            <div class="child">child8</div>
+            <div class="child">child9</div>
+            <div class="child">child10</div>
+            <div class="child">child11</div>
+            <div class="child">child12</div>
+        </div> -->
+    <div class="nsnavbar">
+        <div class="child">NS LOGO</div>
+        <div class="child">data science</div>
+        <div class="child">fsd</div>
+        <div class="child">btech</div>
+        <div class="child">hireform</div>
+        <div class="child">More</div>
+        <div class="child">Signup</div>
+        <div class="child">More</div>
+        <div class="child">Signup</div>
+    </div>
+</body>
+
+</html>

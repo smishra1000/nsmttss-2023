@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            pseduo elements
+        </title>
+        <style>
+            p::after{
+                content:"sameer mishra";
+                color:red
+            }
+            p::before{
+                content: "about me";
+            }
+            div h1::selection{
+                background-color: green;
+            }
+            div h1::before{
+                content:"Company-specific interview prep  ";
+                color:red
+            }
+            a[target]{
+                color:green
+            }
+        </style>
+    </head>
+    <body>
+        <h1>-------Pseduo elemenst demo------</h1>
+        <p>I am </p>
+      
+            <div>
+                <h1>
+                    Get company-specific interview preparation help, from the likes of Google, Swiggy, Microsoft.</h1>
+            </div>
+            <a href="home.html">home</a>
+            <a href="home.html" target="_self">abouts</a>
+    </body>
+</html>

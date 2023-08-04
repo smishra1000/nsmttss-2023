@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            /* h1[class~="box"]{
+                color:green;
+            } */
+            h4[class|="box"]{
+                color:red;
+            }
+            img[title|="first"]{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>opt group demo</h1>
+        <select>
+            <option>India</option>
+            <option>pak</option>
+            <option>Aus</option>
+        </select>
+        <label>pick</label>
+        <select>
+            <optgroup label="countries">
+                <option>India</option>
+                <option>pak</option>
+                <option>Aus</option>
+            </optgroup>
+            <optgroup label="movies">
+                <option>abc</option>
+                <option>def</option>
+                <option>Aus</option>
+            </optgroup>
+        </select>
+        <small> attribute selector</samll>
+        <!-- <h1 class="box hello">hello world1 ~</h1>
+        <h1 class="hello box">hello world2 ~</h1> -->
+
+        <h4 class="box-hello1">hello world4 | </h4>
+        <h4 class="box-hello2">hello world5 | </h4>
+        <img title="first-image" />
+        <img title="image-first" />
+
+        <!-- note---- | for dashed seprated word ; begin with given word or first word in dash separted word
+        ~ -- space seprated word
+
+        ~--- value should match with attribute inside space seprated word
+
+        ^--- starting from  
+        $-- end withs 
+        *--any where in the list -->
+
+        <label for="fname">firstname</label>
+        <input id="fname" type="text" value=""/>
+
+    </body>
+</html>
+
+<!-- countries 
+    india ABC 
+    DEF 
+    pak 
+    aus 
+Movies  -->
+       

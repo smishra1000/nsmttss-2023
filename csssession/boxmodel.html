@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>box model</title>
+        <style>
+            p{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                padding:10px;
+                border: 2px solid green;
+            }
+            /* div{
+                width:200px;
+                height:200px;
+                border: 3px solid pink;
+            } */
+            .login-box{
+                width:100px;
+                height:100px;
+                background-color: yellow;
+                padding: 2px;
+                border: 2px dotted red;
+            }
+            .get_started_button{
+                width: 150px;
+                height: 40px;
+                text-align: center;
+                background-color: yellow;
+                border-radius: 5px;
+                padding-top: 5px;
+            }
+            .get_link{
+                color:#000;
+                padding: 20px;
+            }
+            .get_started_button:hover{
+                background-color: pink;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>box model demo</h1>
+        <!-- <div>
+            <p>hello paragraph</p>
+        </div> -->
+        <div class="login-box">
+            hello world
+        </div>
+        <div class="get_started_button">
+            <a class="get_link">Get Started</a>
+        </div>
+       
+    </body>
+</html>
