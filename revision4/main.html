@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            revision demo
+        </title>
+        <style>
+            .container{
+                display: grid;
+                height: 400px;
+                border: 2px solid green;
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 50px 50px;
+                /* align-content: center; */
+            }
+            .item{
+                border: 2px solid red;
+            }
+            .item4{
+                align-self: center;
+            }
+            .main-conatiner{
+                width: 600px;
+                border: 1px solid red;
+                display: flex;
+                height:400px;
+                align-items: flex-end;
+
+            }
+            .itemnew1{
+                border: 2px solid #000;
+                flex:1
+            }
+            .itemnew2{
+                align-self: center;
+            }
+            .box1{
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+            }
+            .box2{
+                width: 100px;
+                height: 100px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h4>Data list tag demo</h4>
+        <input type="countries" name="countries" value="eng" list="countries"/>
+        <!-- <datalist id="countries">
+            <option value="india">india</option>
+            <option value="aus">aus</option>
+            <option value="eng">eng</option>
+            <option value="england">england</option>
+            <option value="pak">pak</option>
+        </datalist> -->
+
+        <!-- <div class="container">
+            <div class="item">item1</div>
+            <div class="item">item2</div>
+            <div class="item">item3</div>
+            <div class="item item4">item4</div>
+            <div class="item">item5</div>
+            <div class="item">item6</div>
+        </div> -->
+        <!-- <div class="main-conatiner">
+            <div class="itemnew1">item1</div>
+            <div class="itemnew1 itemnew2">item2</div>
+        </div> -->
+
+        <h4>zindex-demo</h4>
+        <div class="box1">
+            hello box 1
+        </div>
+        <div class="box2">
+            hello box 2
+        </div>
+    </body>
+</html>

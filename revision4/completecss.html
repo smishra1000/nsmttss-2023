@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css demo</title>
+        <style>
+            /* h1{
+                color:red
+            } */
+            *{
+                margin:0;
+                padding:0;
+            }
+            /* #head1{
+                color:cyan;
+            }
+            #head2{
+                color:green
+            }
+            #head3{
+                color:blue
+            } */
+            /* .mainhead{
+                color:brown;
+            }
+
+            ul.countries li{
+                color:green
+            }
+            ul.city li{
+                color:blue
+            }
+            ul li{
+                font-size: 30px;
+            } */
+            /* div >h1{
+                color:red
+            }
+            ul > li {
+                color:green
+            } */
+            /* div > h1~h2{
+                color:red;
+            } */
+            /* div>h1,h2,h3,h4,p{
+                color:green
+            } */
+           /* p[id="p1"]{
+            color:blue
+           }
+           p[id]{
+                color:green
+           } */
+           /* p[id*="para1"]{
+                color:brown
+           } */
+           /* p[id^="para1"]{
+            color:blue
+           } */
+           p[class|="para1"]{
+            color:cyan
+           }
+        </style>
+        <link rel="stylesheet" href="completecss.css">
+    </head>
+    <body>
+        <!-- first ways--inline style-->
+        <!-- <h1 style="color:red">hello world</h1> -->
+        <!-- embedding using style tag inside head tag-->
+        <!-- <h1 id="head1">hello world2</h1>
+        <h1 id="head2">hello world 3</h1>
+        <h1 id="head3">hello world 4</h1> -->
+
+        <!-- third ways  create external css file and then 
+            load it inside your html through link tag-->
+
+            <!-- <h1 class="mainhead">hello world5</h1>
+            <h1 class="mainhead">hello world6</h1>
+            <h1 class="mainhead">hello world7</h1>
+            <p class="mainhead">hello paragraph</p> -->
+
+            <!-- descendent selector-->
+            <!-- <ul class="countries">
+                <li class="item">
+                    india
+                </li>
+                <li  class="item">
+                    westindies
+                </li>
+            </ul>
+            <ul class="city">
+                <li class="item">
+                    hyd
+                </li>
+                <li  class="item">
+                    blr
+                </li>
+            </ul> -->
+
+            <!-- child selector-->
+            <!-- <h1>i am outside of box</h1>
+            <div>
+                <h1>hello i am inside box</h1>
+            </div>
+            <ul class="city">
+                <li class="item">
+                    hyd
+                </li>
+                <li  class="item">
+                    blr
+                </li>
+            </ul> -->
+
+            <!--- adjacent sibling selector-->
+            <!-- <div>
+                <h1>hello world inside box</h1>
+                <h2>hello world2 inside box</h2>
+                <h2>hello world 3 inside box </h2>
+            </div> -->
+            <!-- grouping selector-->
+            <!-- <div>
+                <h1>hello world1</h1>
+                <h1>hello world2</h1>
+                <p>hello paragraph</p>
+                <p>hello paragraph2</p>
+            </div> -->
+
+            <!-- <p id="text-para1">hello paragraph</p>
+            <p id="para1-text">hello paragrpah2</p> -->
+            <p class="box1 para1">hello paragrpah 3</p>
+            <p class="para1 box1">hello paragrpah 4</p>
+    </body>
+</html>
