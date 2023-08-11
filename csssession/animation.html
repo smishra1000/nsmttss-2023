@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            animation demo
+        </title>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: red;
+                position: relative;
+                animation: pleasemoveme 10s  linear infinite
+            }
+            @keyframes pleasemoveme {
+                0% {
+                    /* left:100px; */
+                    top:100px;
+                }
+                60% {
+                    /* transform: scale(0.5); */
+                    /* left:0px; */
+                    top:0px;
+                }
+                100% {
+                    /* transform: scale(3); */
+                    /* left:50px; */
+                    top:200px
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- keyframe , properties, duration-->
+        <!-- keyframe--animation-name, duration, delay, iteration count -->
+        <!--- animation timing function -->
+        <div class="box">
+
+        </div>
+    </body>
+</html>
