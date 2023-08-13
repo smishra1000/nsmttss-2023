@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            animation demo for properties
+        </title>
+        <style>
+            .box{
+                width: 200px;
+                height: 50px;
+                background-color: green;
+                animation-name: moveme;
+                animation-duration: 5s;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate;
+                position: relative;
+                /* animation-duration: 5s;
+                animation-iteration-count: 1;
+                animation-timing-function: cubic-bezier(2, 2, 2, 1);
+                animation-direction: reverse;
+                animation-delay: 3s; */
+                /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            }
+            @keyframes moveme {
+                0%{
+                    /* transform: scale(0.2); */
+                    background-color: blue;
+                    left:50px;
+                }
+                40%{
+                    /* transform: scale(0.5); */
+                    background-color: cyan;
+                    left:100px;
+                }
+                60%{
+                    /* transform: scale(0.8); */
+                    background-color: pink;
+                    left: 200px;
+                }
+                80%{
+                    /* transform: scale(1); */
+                    background-color: yellow;
+                    left: 250px;
+                }
+                100%{
+                    transform: scale(2);
+                    background-color: green;
+                    left: 0px;
+                }
+            }
+            .box-red{
+                width: 50px;
+                height:50px;
+                position: relative;
+                background-color: blueviolet;
+                animation: topdown 5s ease-in-out 5s 1 alternate backwards, bottomup 5s ease-in-out 5s 1 alternate forwards;
+            }
+            @keyframes topdown {
+                0%{
+                    top:0;
+
+                }
+                70%{
+                    top:100px;
+                }
+                100%{
+                    top:300px;
+                }
+            }
+            @keyframes bottomup {
+                0%{
+                   background-color: blue;
+                }
+                100%{
+                    background-color: green;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="box">
+
+        </div> -->
+        <div class="box-red"></div>
+        <!-- <div class="box-red"></div> -->
+    </body>
+
+</html>

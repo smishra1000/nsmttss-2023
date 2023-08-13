@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            multiple elements
+        </title>
+        <style>
+            body{
+                display: flex;
+                height: 400px;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .box1,.box2{
+                width: 100px;
+                height: 100px;
+                margin: 5px;
+                position: relative;
+                text-align: center;
+            }
+            .box1{
+                background-color: red;
+                animation-name: moverightside;
+                animation-duration: 5s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: backwards;
+                animation-play-state:paused;
+            }
+            .box2{
+                background-color: green;
+                animation-name: moveleftside;
+                animation-duration: 5s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: both;
+                animation-play-state: playing;
+            }
+            @keyframes moverightside {
+                0%{
+                    left:0;
+                    border:4px solid cyan;
+                }
+                100%{
+                    left:300px;
+                    border:4px solid green;
+                }
+            }
+            @keyframes moveleftside {
+                0%{
+                    right:0
+                }
+                100%{
+                    right:300px
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+            
+        </div>
+    </body>
+</html>
